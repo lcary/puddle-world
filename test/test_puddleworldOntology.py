@@ -12,10 +12,13 @@ from frozendict import frozendict
 from nose.tools import *
 import numpy as np
 
+import lib.program as ec_program
+
 from pyccg.logic import Expression
 from pyccg.model import Model
 
-from puddleworldOntology import ontology, process_scene
+from puddleworldOntology import ec_ontology, ontology, process_scene
+from utils import convertOntology
 
 
 SIMPLE_SCENE = np.array(
@@ -224,7 +227,7 @@ def _test_ec_case(scene, ec_expression, expected, msg=None):
   print("Objects:")
   pprint(scene['objects'])
 
-  puddleworldTypes, puddleworldPrimitives = convertOntology(ec_ontology)
+  puddleworldTypes, puddleworldPrimitives = convertOntology(ec_ontology, namespace='')
 
   expr = ec_program.Program.parse(ec_expression)
   value = expr.runWithArguments([scene])

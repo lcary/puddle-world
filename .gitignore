@@ -5,3 +5,5 @@ experimentOutputs/
 __pycache__/
 container.img
 __pycache__
+*~
+venv/
