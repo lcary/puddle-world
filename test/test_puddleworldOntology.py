@@ -12,7 +12,7 @@ from frozendict import frozendict
 from nose.tools import *
 import numpy as np
 
-import eclib.program as ec_program
+import dreamcoder.program as ec_program
 
 from pyccg.logic import Expression
 from pyccg.model import Model

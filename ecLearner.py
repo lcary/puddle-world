@@ -15,11 +15,11 @@ import os
 import random
 import string
 
-from eclib.ec import explorationCompression, commandlineArguments, Task, ecIterator
-from eclib.grammar import Grammar
-from eclib.utilities import eprint, numberOfCPUs
-from eclib.recognition import *
-from eclib.task import *
+from dreamcoder.ec import explorationCompression, commandlineArguments, Task, ecIterator
+from dreamcoder.grammar import Grammar
+from dreamcoder.utilities import eprint, numberOfCPUs
+from dreamcoder.recognition import *
+from dreamcoder.task import *
 
 from puddleworldOntology import ec_ontology, process_scene
 from utils import convertOntology

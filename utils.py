@@ -9,9 +9,9 @@ sys.path.insert(0, "../pyccg")
 sys.path.insert(0, "../pyccg/nltk")
 ####
 
-import eclib.type as ec_type
-import eclib.program as ec_program
-from eclib.utilities import curry
+import dreamcoder.type as ec_type
+import dreamcoder.program as ec_program
+from dreamcoder.utilities import curry
 
 from pyccg.chart import WeightedCCGChartParser, printCCGDerivation
 from pyccg.lexicon import Lexicon
